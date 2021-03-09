@@ -6,6 +6,9 @@
 //
 
 import Foundation
+import NFCPassportReader
+import TensorFlowLite
+
 
 public class Service {
     
