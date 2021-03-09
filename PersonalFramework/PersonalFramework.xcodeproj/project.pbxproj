@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		A6CCEC2A25F78C8600E2A1DD /* PersonalFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = A6CCEC2825F78C8600E2A1DD /* PersonalFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A6CCEC3325F78CE800E2A1DD /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CCEC3225F78CE800E2A1DD /* Service.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A6CCEC2525F78C8600E2A1DD /* PersonalFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PersonalFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6CCEC2825F78C8600E2A1DD /* PersonalFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonalFramework.h; sourceTree = "<group>"; };
 		A6CCEC2925F78C8600E2A1DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6CCEC3225F78CE800E2A1DD /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				A6CCEC2825F78C8600E2A1DD /* PersonalFramework.h */,
 				A6CCEC2925F78C8600E2A1DD /* Info.plist */,
+				A6CCEC3225F78CE800E2A1DD /* Service.swift */,
 			);
 			path = PersonalFramework;
 			sourceTree = "<group>";
@@ -94,6 +97,7 @@
 				TargetAttributes = {
 					A6CCEC2425F78C8600E2A1DD = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 				};
 			};
@@ -130,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6CCEC3325F78CE800E2A1DD /* Service.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +266,7 @@
 		A6CCEC2E25F78C8600E2A1DD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = SY9GC8368B;
@@ -278,6 +284,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ProgramersForce.pk.PersonalFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -286,6 +293,7 @@
 		A6CCEC2F25F78C8600E2A1DD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = SY9GC8368B;
